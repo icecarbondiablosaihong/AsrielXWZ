@@ -1,0 +1,44 @@
+<html style="overflow: hidden;">
+  <link rel="stylesheet" type="text/css" href="./css/layui.css">
+  <style>
+  	img{
+  		/* width:100%; */
+  		height:100%;
+  		
+  	}
+        .layui-carousel>[carousel-item]>.layui-this {
+      left: 0;
+      background-color: black;
+      align-items: center;
+  }
+  .layui-carousel>[carousel-item]>*{
+   text-align:center
+  }
+  html{
+      overflow: hidden;
+    }
+  </style>
+  <div class="layui-carousel" id="flower">
+   <div carousel-item >
+     <div><img src="./img/flower-1.png"></div>
+     <div><img src="./img/flower-3.png"></div>
+     <div><img src="./img/flower-4.png"></div>
+     <div><img src="./img/flower-5.png"></div>
+     <div><img src="./img/flower-6.png"></div>
+   </div>
+  </div> 
+
+   <script type="text/javascript" src="./js/layui.js"></script>
+
+   <script>
+    layui.use(function(){
+     var carousel = layui.carousel;
+     // 渲染 - 常规轮播
+     carousel.render({
+       elem: '#flower',
+       width: 'auto',
+       height:'auto',
+     });
+   });
+   </script>
+</html>

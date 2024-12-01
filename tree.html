@@ -1,0 +1,45 @@
+ <html style="overflow: hidden;">
+	 <link rel="stylesheet" type="text/css" href="./css/layui.css">
+	 <style>
+			img{
+				height:100%;
+			}
+	      .layui-carousel>[carousel-item]>.layui-this {
+	    left: 0;
+	    background-color: black;
+	    align-items: center;
+			}
+			.layui-carousel>[carousel-item]>*{
+			 text-align:center
+			}
+			.title_skin .layui-layer-title{
+				font-family: 'KyivMachine';
+    		font-size: 28px
+			}
+	</style>
+	 <div class="layui-carousel" id="tree">
+	  <div carousel-item >
+	    <div><img src="./img/tree-1.png"></div>
+	    <div><img src="./img/tree-3.png"></div>
+	    <div><img src="./img/tree-4.png"></div>
+	    <div><img src="./img/tree-5.png"></div>
+	    <div><img src="./img/tree-6.png"></div>
+	    <div><img src="./img/tree-7.png"></div>
+		<div><img src="./img/tree-8.png"></div>
+	  </div>
+	</div> 
+
+	 <script type="text/javascript" src="./js/layui.js"></script>
+
+	 <script>
+		 layui.use(function(){
+		  var carousel = layui.carousel;
+		  // 渲染 - 常规轮播
+		  carousel.render({
+		    elem: '#tree',
+		    width: 'auto',
+		    height:'auto',
+		  });
+		});
+	 </script>
+</html>
